@@ -2,16 +2,10 @@
 
 ## Installation
 
-To run this program, you need to install the following libraries:
-
-- Django
-- Python
-
-You can install these libraries using pip. Open your terminal or command prompt and run the following commands:
+You can install the following libraries using pip. Open your terminal or command prompt and run the following command:
 
 ```bash
-pip install django
-pip install python
+pip install -r requirements.txt
 ```
 
 ## Running the Program
@@ -27,7 +21,7 @@ python manage.py runserver
 
 3. Open your web browser and enter the following URL:
 
-```
+```bash
 http://localhost:8000
 ```
 
