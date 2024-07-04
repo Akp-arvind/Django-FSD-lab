@@ -208,6 +208,7 @@ env\Scripts\activate
 5. You can now install the necessary libraries and run the program as mentioned in the previous instructions.
 
 If you're using VS Code, go to View - Command Palette - Python: Select Interpreter - 3.11.1 ( 'env':venv )
+
 Remember to deactivate the virtual environment when you're done by running the following command:
 
 ```bash
