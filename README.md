@@ -24,11 +24,29 @@ git clone https://github.com/Akp-arvind/Django-FSD-lab
 
 ## Installation
 
-You can install the required libraries using pip. Open your terminal or command prompt and run the following command:
+ - Libraries: You can install the required libraries using pip. Open your terminal or command prompt and run the following command:
 
 ```bash
 pip install -r requirements.txt
 ```
+
+ - Download and install the XAMPP server
+```bash
+https://www.apachefriends.org/download.html
+```
+
+**OR**
+
+ - Download and install WAMP server
+```bash
+https://sourceforge.net/projects/wampserver/files/latest/download
+```
+ - For WAMP, many files will be missing and the system asks to install them. Hence download the files from this website:
+```bash
+https://wampserver.aviatechno.net/
+```
+(Last link ; chose second file after getting redirected ; Windows_64_bit) <br>
+
 ## Project creation
 
 Open the terminal and enter the following command:
@@ -44,7 +62,7 @@ Observe that some files are generated.
 Once you have installed the necessary libraries, and satisfied the program specific requirements, you can run the program by following these steps:
 
 1. Navigate to the project directory using the terminal or command prompt.
-- Ensure that XAMPP/WAMP server is running.
+- Ensure that XAMPP/WAMP server is running (if required).
 2. Run the following command to start the Django server:
 
 ```bash
@@ -96,24 +114,8 @@ http://localhost:8000/showlist/
 http://localhost:8000/home/
 ```
 5. ### Models (ap4)
- - Download and install the XAMPP server
-```bash
-https://www.apachefriends.org/download.html
-```
 
-**OR**
-
- - Download and install WAMP server
-```bash
-https://sourceforge.net/projects/wampserver/files/latest/download
-```
- - For WAMP, many files will be missing and the system asks to install them. Hence download the files from this website:
-```bash
-https://wampserver.aviatechno.net/
-```
-(Last link ; chose second file after getting redirected ; Windows_64_bit) <br>
-
- - After successful installation of the server, start it and go to:
+ - After successful installation of the server from [Installation](#installation) segment, start it and go to:
 ```bash
 http://localhost/phpmyadmin
 ```
@@ -177,9 +179,9 @@ python manage.py createsuperuser
 ```
  - Make changes to the db using the admin UI.
 
-After running the code, the changes made will be reflected in the same URL as of the last app:
+To login, enter the following URL in your web browser:
 ```bash
-http://localhost:8000/reg/
+http://localhost:8000/admin/
 ```
 <br>
 <hr>
