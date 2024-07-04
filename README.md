@@ -44,6 +44,7 @@ Observe that some files are generated.
 Once you have installed the necessary libraries, and satisfied the program specific requirements, you can run the program by following these steps:
 
 1. Navigate to the project directory using the terminal or command prompt.
+- Ensure that XAMPP/WAMP server is running.
 2. Run the following command to start the Django server:
 
 ```bash
@@ -55,6 +56,11 @@ python manage.py runserver
 ```bash
 http://localhost:8000
 ```
+OR
+```bash
+http://127.0.0.1:8000
+```
+
 You should now be able to access the program. <br>
 You would have to enter the path manually this way.
 
