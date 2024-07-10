@@ -12,6 +12,9 @@
     - [Template Inheritance](#template-inheritance-ap3)
     - [Models](#models-ap4)
     - [Admin Interface](#admin-interface-ap4)
+    - [Model Form](#model-form-ap4)
+    - [Generic Views](#generic-views)
+    - [CSV and PDF gen](#csv-and-pdf-gen)
 6. [Setting Up the Local System Environment](#setting-up-the-local-system-environment)
 
 ## Cloning the Repository
