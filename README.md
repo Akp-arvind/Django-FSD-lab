@@ -103,6 +103,9 @@ http://localhost:8000/cdt/
 ```
 2. ### Time delta (ap1)
 ```bash
+http://localhost:8000/fhb/
+```
+```bash
 http://localhost:8000/fha/
 ```
 3. ### Templates (ap2)
@@ -113,6 +116,8 @@ http://localhost:8000/showlist/
 ```bash
 http://localhost:8000/home/
 ```
+ - Navigation can be done via clicking the links 
+ - Observe the changes in URL after clicking
 5. ### Models (ap4)
 
  - After successful installation of the server from [Installation](#installation) segment, start it and go to:
@@ -152,7 +157,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS=[os.path.join(BASE_DIR, 'ap4/static')] 
 # added
 ```
- - Make migrations to the db:
+ - Make [migrations](#migrations) to the db:
 ```bash
 python manage.py makemigrations ap4
 ```
@@ -160,12 +165,13 @@ python manage.py makemigrations ap4
 python manage.py migrate
 ```
  - Add entities in the database tables (ap4_student and ap4_course)
- - Note: migrations should be done every time _models.py_ changes or any database table changes.
+ - ### NOTE: migrations should be done every time _models.py_ changes or any database table changes.
 
 Finally, for viewing the output, run the code and open your web browser to enter the followinbg URL:
 ```bash
 http://localhost:8000/reg/
 ```
+ - Remember to stop the server once you're done.
 ```bash
 http://localhost:8000/course_search/
 ```
@@ -183,6 +189,37 @@ To login, enter the following URL in your web browser:
 ```bash
 http://localhost:8000/admin/
 ```
+7. ### Model Form (ap4)
+ - Perform migrations if required, run the app and go to:
+```bash
+http://localhost:8000/add_project/
+```
+ - Add the indicated fields.
+ - The changes can be viewed here (ap4_project):
+```bash
+http://localhost/phpmyadmin
+```
+8. ### Generic Views
+```bash
+http://localhost:8000/student_list/
+```
+```bash
+http://localhost:8000/student_detail/
+```
+ - /<int: pk>/ (primary key, e.g. - "/2/") can be apppended here which will display the details of the corresponding student. 
+9. ### CSV and PDF gen
+ - Ensure that the data has been inserted beforehand.
+ - 9 A
+```bash
+http://localhost:8000/construct_csv_from_model/
+```
+ - 9 B
+```bash
+http://localhost:8000/construct_pdf_from_model/
+```
+ - Observe that the files get downloaded as soon as the path is entered.
+
+
 <br>
 <hr>
 <hr>

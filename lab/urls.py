@@ -15,13 +15,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
 from ap1.views import Current_datetime 
 from ap1.views import four_hours_ahead
 from ap1.views import four_hours_before, display_string
 from ap2.views import showlist  
 from ap3.views import aboutus,home,contactus
 from ap4.views import reg,course_search
+from ap4.views import add_project # 7
+from ap4.views import StudentListView, StudentDetailView # 8
+from ap4.views import construct_csv_from_model, construct_pdf_from_model # 9-A, 9-B
 
 # prog 6
 admin.site.site_header = "Registration System"
@@ -42,4 +45,9 @@ urlpatterns = [
     path('contactus/', contactus),
     path('reg/', reg),
     path('course_search/', course_search),
+    path('add_project/', add_project),
+    path('student_list/', StudentListView.as_view()), # / important
+    path('student_detail/<int:pk>/', StudentDetailView.as_view()),
+    path('construct_csv_from_model/', construct_csv_from_model), 
+    path('construct_pdf_from_model/', construct_pdf_from_model),
 ]     
