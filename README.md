@@ -116,6 +116,7 @@ http://localhost:8000/fha/
 http://localhost:8000/showlist/
 ```
 4. ### Template Inheritance (ap3)
+ - Change the DIRS to ap3/templates, run the code and go to:
 ```bash
 http://localhost:8000/home/
 ```
