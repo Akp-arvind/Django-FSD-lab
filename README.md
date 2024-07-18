@@ -13,8 +13,10 @@
     - [Models](#models-ap4)
     - [Admin Interface](#admin-interface-ap4)
     - [Model Form](#model-form-ap4)
-    - [Generic Views](#generic-views)
-    - [CSV and PDF gen](#csv-and-pdf-gen)
+    - [Generic Views](#generic-views-ap4)
+    - [CSV and PDF gen](#csv-and-pdf-gen-ap4)
+    - [Registration using AJAX](#registration-using-ajax-ap4)
+    - [Search using AJAX](#search-using-ajax-ap4)
 6. [Setting Up the Local System Environment](#setting-up-the-local-system-environment)
 
 ## Cloning the Repository
@@ -202,7 +204,8 @@ http://localhost:8000/add_project/
 ```bash
 http://localhost/phpmyadmin
 ```
-8. ### Generic Views
+8. ### Generic Views (ap4)
+ - Use the following paths for getting generic and detailed views (pre-registered students):
 ```bash
 http://localhost:8000/student_list/
 ```
@@ -210,7 +213,8 @@ http://localhost:8000/student_list/
 http://localhost:8000/student_detail/
 ```
  - /<int: pk>/ (primary key, e.g. - "/2/") can be apppended here which will display the details of the corresponding student. 
-9. ### CSV and PDF gen
+
+9. ### CSV and PDF gen (ap4)
  - Ensure that the data has been inserted beforehand.
  - 9 A
 ```bash
@@ -222,6 +226,18 @@ http://localhost:8000/construct_pdf_from_model/
 ```
  - Observe that the files get downloaded as soon as the path is entered.
 
+10. ### Registration using AJAX (ap4)
+ - Ensure that "jquery.min.js" file is present in the static folder.
+```bash
+http://localhost:8000/regaj/
+```
+ - Observe that the output is displayed on the same web page (reloading is not required, thanks to Ajax).
+
+11. ### Search using AJAX (ap4)
+```bash
+http://localhost:8000/course_search_ajax/
+```
+ - Again, the partial output is loaded on the same page.
 
 <br>
 <hr>

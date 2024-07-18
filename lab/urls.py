@@ -25,6 +25,8 @@ from ap4.views import reg,course_search
 from ap4.views import add_project # 7
 from ap4.views import StudentListView, StudentDetailView # 8
 from ap4.views import construct_csv_from_model, construct_pdf_from_model # 9-A, 9-B
+from ap4.views import regaj # prog 10
+from ap4.views import course_search_ajax # prog 11
 
 # prog 6
 admin.site.site_header = "Registration System"
@@ -50,4 +52,6 @@ urlpatterns = [
     path('student_detail/<int:pk>/', StudentDetailView.as_view()),
     path('construct_csv_from_model/', construct_csv_from_model), 
     path('construct_pdf_from_model/', construct_pdf_from_model),
+    path('regaj/', regaj), 
+    path('course_search_ajax/', course_search_ajax),
 ]     
