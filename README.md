@@ -118,13 +118,14 @@ http://localhost:8000/fha/
 http://localhost:8000/showlist/
 ```
 4. ### Template Inheritance (ap3)
+ - In settings.py, change the DIRS to ap3/templates, run the code and go to:
 ```bash
 http://localhost:8000/home/
 ```
  - Navigation can be done via clicking the links 
  - Observe the changes in URL after clicking
 5. ### Models (ap4)
-
+ - In settings.py switch "ap3/templates" with "ap4/templates" under DIRS
  - After successful installation of the server from [Installation](#installation) segment, start it and go to:
 ```bash
 http://localhost/phpmyadmin
